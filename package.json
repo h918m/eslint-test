@@ -1,0 +1,25 @@
+{
+  "name": "eslint-test",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "eslint": "=1.10.3",
+    "eslint-config-google": "=0.3.0"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "eslintConfig": {
+    "browser": true,
+    "extends": "google",
+    "rules": {
+      "require-jsdoc": [2, {
+        "require": {
+          "FunctionDeclaration": false,
+          "MethodDefinition": false,
+          "ClassDeclaration": false
+        }
+      }]
+    }
+  }
+}
